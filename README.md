@@ -17,6 +17,8 @@ Check out this project as a submodule:
         $ cd [...]/reveal.js
         $ git submodule add git@github.com:cassiel/reveal-js-demo-slides.git reveal-js-demo-slides
 
+(Actually, the GitHub repo. seems to carry a copy of this already.)
+
 Do the [Leiningen](https://github.com/technomancy/leiningen) thing to evaluate the code in `reveal-js-demo-slides/example-slides.clj`. (I do everything in [emacs-live](https://github.com/overtone/emacs-live).)
 
 This should result in files in the directory `_included` in the main `reveal.js` directory. Depending on your server configuration, browsing to `index-ssi.shtml` should result in a complete presentation.
