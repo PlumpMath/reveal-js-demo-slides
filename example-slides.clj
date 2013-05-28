@@ -1,5 +1,5 @@
 (ns user
-  (:use hiccup.core)
+  (:use hiccup.core hiccup.page)
   (:import (java.io File)))
 
 (let [;; Roots for media based on having this project as a Git submodule of `reveal.js`.
@@ -33,8 +33,7 @@
     [:meta {:name "description" :content "Title of Presentation"}]
     [:meta {:name "author" :content "A. N. Author"}]
     ;; Stylesheet path relative to the enclosing .shtml:
-    [:link#theme {:rel "stylesheet"
-                  :href "css/theme/beige.css"}]))
+    (include-css "css/theme/beige.css")))
 
   (spit
    (str INCLUDE-ROOT "content.html")
